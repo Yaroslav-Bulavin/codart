@@ -79,19 +79,43 @@ $(document).ready(function () {
 
     filter.on("click", function (event) {
         event.preventDefault();
+        // console.log()
         let cat = $(this).data('filter');
+
+        $(".project__nav a").removeClass("active");
+        $(event.target).addClass("active");
 
         $("[data-category]").each(function () {
             var filterWork = $(this).data('category');
 
             if (filterWork != cat) {
                 $(this).addClass("hide");
-                $(".project__nav a").removeClass("active");
             } else {
                 $(this).removeClass("hide");
-                $("[data-filter]").addClass("active");
+                // $("[data-filter]").addClass("active");
             }
         });
 
     })
+
+    if(window.location.pathname === '/codart/secondpage.html' && RegExp('[\?&]' + "category" + '=([^&#]*)').exec(window.location.href)){
+        $.urlParam = function(name){
+            var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+            return results[1] || 0;
+        }
+
+        let cat = $.urlParam("category")
+
+        $("[data-category]").each(function () {
+            let filterWork = $(this).data('category');
+
+            if (filterWork != cat) {
+                $(this).addClass("hide");
+            } else {
+                $(this).removeClass("hide");
+            }
+        });
+    }
+
 });
+
