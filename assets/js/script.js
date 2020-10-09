@@ -96,15 +96,15 @@ $(document).ready(function () {
             }
         });
 
-    })
+    });
 
     if(window.location.pathname === '/codart/secondpage.html' && RegExp('[\?&]' + "category" + '=([^&#]*)').exec(window.location.href)){
         $.urlParam = function(name){
             var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
             return results[1] || 0;
-        }
+        };
 
-        let cat = $.urlParam("category")
+        let cat = $.urlParam("category");
 
         $("[data-category]").each(function () {
             let filterWork = $(this).data('category');

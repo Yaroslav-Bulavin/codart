@@ -1321,6 +1321,19 @@ label {
     .intro__btn {
         margin: 20px auto 0;
     }
+    .nav__link--mobile {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    .header__tel--mobile {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    .header__logo--mobile {
+        order: 3;
+        margin: 20px auto 0;
+    }
     .about {
         padding-bottom: 60px;
     }
@@ -1370,6 +1383,9 @@ label {
     }
     .accordeon {
         max-width: 610px;
+    }
+    .nav__link--mobile:last-child {
+        margin-bottom: 15px;
     }
 }
 @media (max-width: 650px) {
@@ -1439,6 +1455,12 @@ label {
     .about__cards--item:nth-child(3) {
         margin-right: 19px;
     }
+    .nav__link--mobile {
+        font-size: 14px;
+    }
+    .header__tel--mobile {
+        font-size: 18px;
+    }
 
 }
 @media (max-width: 570px) and (orientation: landscape) {
@@ -1462,6 +1484,15 @@ label {
     }
 }
 @media (max-width: 550px) {
+    .nav__link--mobile {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 45px;
+    }
+    .header__tel--mobile {
+        font-size: 21px;
+        margin: 10px auto;
+    }
     .intro__title {
         font-size: 40px;
         line-height: 50px;
@@ -1544,6 +1575,17 @@ label {
     }
 }
 @media (max-width: 450px) {
+    .nav__link--mobile {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 45px;
+    }
+    .header__tel--mobile {
+        font-size: 19px;
+    }
+    .header__logo--mobile {
+        margin: 15px auto 0;
+    }
     .header__tel {
         font-size: 17px;
     }
@@ -1639,6 +1681,15 @@ label {
 }
 
 @media (max-width: 385px) {
+    .nav__link--mobile {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    .header__tel--mobile {
+        font-size: 18px;
+        margin: 20px auto;
+    }
     .accordeon {
         max-width: 330px;
     }
@@ -1651,8 +1702,6 @@ label {
     .form__btn {
         margin-left: 0;
     }
-}
-@media (max-width: 385px) {
     .intro__btn {
         width: 200px;
         height: 45px;
