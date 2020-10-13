@@ -1,0 +1,321 @@
+.main {
+    background-image: url("../images/pizzaapp/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1345px;
+}
+.main__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main__content {
+    width: 50%;
+    padding-top: 335px;
+}
+.main__title {
+    font-size: 70px;
+    line-height: 85px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+.main__text {
+    width: 100%;
+    max-width: 700px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+}
+.main__buttons {
+    padding-top: 155px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main__buttons a {
+    margin-right: 20px;
+}
+.main__buttons a:last-child {
+    margin-right: 0;
+}
+.main__image {
+    width: 50%;
+    padding-top: 130px;
+}
+.main__image img {
+    margin-left: auto;
+}
+
+
+
+.about-projects__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -60px;
+    justify-content: center;
+}
+.about-projects__image {
+    width: 50%;
+}
+.about-projects__content {
+    width: 50%;
+}
+.main__content--about {
+    padding-top: 0;
+}
+.main__text--about {
+    text-align: left;
+}
+.first__image {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 10px;
+}
+.first__image img {
+    margin-left: auto;
+}
+.second__image {
+    position: absolute;
+    bottom: 160px;
+}
+
+.easy {
+    background-image: url("../images/pizzaapp/bg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1169px;
+    margin-top: -240px;
+}
+.easy__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.easy__image {
+    width: 50%;
+    padding-top: 300px;
+}
+.easy__image img {
+    margin-left: auto;
+}
+
+
+.first__section {
+    margin-top: -370px;
+}
+.first__section__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.first__section--image {
+    width: 50%;
+}
+.first__section--text {
+    width: 50%;
+    max-width: 700px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    padding-top: 200px;
+}
+
+.first__section--second {
+    margin-top: -150px;
+}
+.first__section__inner--second {
+    align-items: normal;
+}
+
+.first__section--third {
+    background-image: url("../images/pizzaapp/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1345px;
+}
+.first__section__inner--third {
+    align-items: center;
+}
+.first__section--image.third {
+    padding-top: 80px;
+}
+
+
+.last__section {
+    margin-top: -250px;
+}
+.last__section--inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.last__section--image {
+    margin: 0 auto;
+}
+.last__section--text {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 33px;
+    padding-right: 30px;
+    padding-bottom: 140px;
+}
+
+.footer--pizza {
+    background-color: #333646;
+}
+
+@media (max-width: 1030px) {
+    .main__title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .main__text br {
+        display: none;
+    }
+    .main__buttons {
+        padding-top: 90px;
+    }
+    .first__section--text br {
+        display: none;
+    }
+    .main__text--about br {
+        display: none;
+    }
+}
+@media (max-width: 835px) and (orientation: landscape) {
+    .first__section--second {
+        margin-top: -50px;
+    }
+    .first__section--third {
+        margin-top: -215px;
+    }
+}
+
+@media (max-width: 775px) {
+    .main__text, .main__text--about {
+        font-size: 22px;
+    }
+    .first__section--second {
+        margin-top: -20px;
+    }
+    .first__section--third {
+        margin-top: -185px;
+    }
+    .last__section {
+        margin-top: -500px;
+    }
+}
+@media (max-width: 680px) and (orientation: landscape) {
+    .first__section--second {
+        margin-top: 30px;
+    }
+    .first__section--third {
+        margin-top: -40px;
+    }
+}
+@media (max-width: 550px) {
+    .main__content {
+        width: 100%;
+        padding-top: 200px;
+    }
+    .main__image {
+        width: 100%;
+        padding-top: 20px;
+    }
+    .main__buttons {
+        padding-top: 50px;
+    }
+    .about-projects__inner {
+        margin-top: 255px;
+    }
+    .about-projects__image {
+        width: 100%;
+        order: 2;
+        margin-top: 140px;
+    }
+    .about-projects__inner {
+        margin-top: 10px;
+    }
+    .easy__image {
+        width: 100%;
+        padding-top: 80px;
+    }
+    .first__section {
+        margin-top: 160px;
+    }
+    .first__section--text {
+        width: 100%;
+        padding-top: 110px;
+    }
+    .first__section--image {
+        width: 100%;
+        order: 2;
+    }
+    .first__section--second {
+        margin-top: 0;
+    }
+    .first__section--text--second {
+        padding-top: 30px;
+    }
+    .first__section--third {
+        margin-top: 0;
+    }
+    .first__section--text--third {
+        padding-top: 0;
+    }
+    .last__section {
+        margin-top: -200px;
+    }
+}
+@media (max-width: 420px) {
+    .main__content {
+        text-align: center;
+    }
+    .about-projects__inner {
+        margin-top: -130px;
+    }
+    .about-projects__image {
+        width: 100%;
+        order: 2;
+        margin-top: 220px;
+    }
+    .main__buttons {
+        padding-top: 50px;
+        justify-content: center;
+    }
+    .main__buttons a {
+        margin-right: 0;
+    }
+    .main__title {
+        font-size: 36px;
+        line-height: 55px;
+    }
+    .main__text, .main__text--about {
+        font-size: 17px;
+        text-align: center;
+    }
+    .first__section--text {
+        text-align: center;
+        font-size: 17px;
+    }
+    .last__section--text {
+        text-align: center;
+        font-size: 24px;
+        padding-right: 0;
+    }
+}
+@media (max-width: 370px) {
+    .main__title {
+        font-size: 28px;
+        line-height: 55px;
+    }
+}

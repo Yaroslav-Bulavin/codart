@@ -557,6 +557,10 @@ h1,h2,h3,h4,h5,h6 {
     width: 50%;
     max-width: 700px;
 }
+.works__link {
+    text-decoration: none;
+    color: #ffffff;
+}
 .works__col:last-child {
     margin-top: 70px;
 }
@@ -569,7 +573,6 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 40px;
     padding: 40px 40px 0 40px;
     border-radius: 2px;
-    cursor: pointer;
     overflow: hidden;
     transition: all 0.2s linear;
 }
@@ -718,7 +721,7 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: column;
 }
 input {
-    background-color: #252835;
+    background-color: transparent;
     border-top: 0;
     border-right: 0;
     border-left: 0;
@@ -745,7 +748,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     -webkit-text-fill-color: #FFFFFF;
-    -webkit-box-shadow: 0 0 0 1000px #252835 inset;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
     transition: background-color 5000s ease-in-out 0s;
 }
 input::placeholder {
